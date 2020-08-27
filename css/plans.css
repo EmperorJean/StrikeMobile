@@ -76,8 +76,14 @@
     flex-grow: 1;
     flex-basis: 0;
     border-radius: 8px;
+    transition: transform 1s;
 }
 
+.priceCollumn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 25;
+}
 .pop
 {
     background-color: rgb(253, 253, 0);
@@ -171,8 +177,6 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-color: rgb(248, 248, 186);
-    border: solid black 1px;
 }
 
 .sparkBody
@@ -221,9 +225,11 @@
 {
     transform: scale(1.5)
 }
+
 @media (max-width: 1400px)
 {
 
+    
     .sparkBody{
         height: 700px;
     }
@@ -239,6 +245,11 @@
 /*Mobile view*/
 @media (max-width: 1000px)
 {
+    .priceCollumn:hover{
+        cursor: pointer;
+        transform: scale(1);
+        z-index: 0;
+    }
     .priceTable
     {
         flex-direction: column;

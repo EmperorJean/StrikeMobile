@@ -74,7 +74,7 @@
     font-size: .65em;
 }
 
-#offerTerms a{
+#offerTerms a, #termA a{
     cursor: pointer;
     color: gray;
     text-decoration: underline;
@@ -111,14 +111,6 @@
 
 #planDeal
 {
-    background-image: url("/images/family.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
-}
-
-#planDeal
-{
     background-color: rgb(255, 255, 177);
 }
 
@@ -137,7 +129,7 @@
     font-size: 3em;
 }
 .dealImage img{
-    width: 400px;
+    width: 25em;
 }
 
 .sectionHeader
@@ -157,12 +149,9 @@
 
 #coverage img
 {
-    width: 600px;
+    width: 25em;
 }
 
-.footHeader{
-    
-}
 .footHeader
 {
     background-color: gray;
@@ -189,6 +178,28 @@
 
 .footHeader h2{
     font-weight: 600;
+}
+
+#planDeal img{
+    width: 24em;
+}
+
+.footerFoot
+{
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.footerFoot ul
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footerFoot li{
+    cursor: pointer;
+    display: inline-block;
 }
 /* for tablets and ipads and smaller monitors */
 @media (max-width: 1400px)
@@ -249,6 +260,11 @@
 #coverage img
 {
     width: 400px;
+}
+
+#planDeal
+{
+    background-size: 100%;
 }
 
 }
