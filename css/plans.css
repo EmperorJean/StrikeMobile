@@ -1,13 +1,165 @@
 /* for tablets and ipads and smaller monitors */
-
+*, *::before,*::after{
+    box-sizing: border-box;
+}
 .planBanner
 {
-    background-image: url("https://media.giphy.com/media/ZSvAC5c9RkW4g/giphy.gif");
+    
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.planBanner h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 5em;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(253, 255, 110);
+}
+
+#lineSpan
+{
+    
+    color: rgb(253, 255, 110);
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+#lineSelect
+{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(253, 255, 110);
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: solid yellow 2px;
+}
+
+#lineSelect > option
+{
+    background: black;
+}
+
+.tableHolder
+{
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceTable
+{
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 1rem;
+}
+
+.priceCollumn
+{
+    background-color: rgb(248, 248, 186);
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.349);
+    padding: 2.5rem;
+    max-width: 400px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 8px;
+}
+
+.pop
+{
+    background-color: rgb(253, 253, 0);
+    z-index: 10;
+    margin-top: -1.5rem;
+    padding-top: 4rem;
+    margin-bottom: -1.5rem;
+    padding-bottom: 4rem;
+}
+
+.priceCollumn:first-child
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.priceCollumn:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.priceHeader
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.price
+{
+    display: flex;
+    font-size: 3.5rem;
+}
+
+.dollarSign
+{
+    font-size: 1.4rem;
+    margin-top: .5rem;
+}
+
+.perMonth
+{
+    font-size: 1rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    text-transform: up;
+}
+
+.planName
+{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.divider
+{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
+    margin-bottom: 0;
+}
+
+.features h1, .perks h1{
+    font-size: 2rem;
+    margin: 2rem 0 .5rem 0;
 }
 
 
+.feature
+{
+    margin: .4rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    
+}
 
-
+.fP
+{
+    margin-left: .5rem;
+}
 @media (max-width: 1400px)
 {
 
@@ -16,4 +168,36 @@
 /*Mobile view*/
 @media (max-width: 1000px)
 {
+    .priceTable
+    {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planBanner
+    {
+        height: 300px;
+    }
+    .planBanner h1
+    {
+        font-size: 2em;
+    }
+
+    .pop
+{
+    background-color: rgb(253, 253, 0);
+    z-index: 10;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0;
+    border-radius: 0;
+}
+
+.priceCollumn{
+    border-radius: 0;
+    width: 100%;
+}
 }
