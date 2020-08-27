@@ -1,0 +1,343 @@
+@import "navigation.css";
+@import "plans.css";
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.landingOffer
+{
+    background-color: rgb(254, 255, 203);
+    position: relative;
+    /* background-image: 
+    linear-gradient(
+      rgba(255, 223, 0, .5), 
+      rgba(255, 1, 1, 0.253)),
+      url("https://c4.wallpaperflare.com/wallpaper/634/541/298/yellow-abstract-geometric-triangle-background-wallpaper-preview.jpg");
+     */
+    background-repeat: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.offerText
+{
+    padding: 0 0 0 150px;
+}
+
+.offerText h4{
+    opacity: .5;;
+}
+.offerPic
+{
+}
+
+#offerLimited
+{
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#offer
+{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 4em;
+}
+
+#offerBuy
+{
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: black 1px 1px;
+    color: gold;
+    font-size: 30px;
+    width: fit-content;
+    margin: 30px 0
+}
+
+#offerBuy:hover
+{
+   opacity: .5;
+}
+
+
+#offerTerms
+{
+    font-size: .65em;
+}
+
+#offerTerms a{
+    cursor: pointer;
+    color: gray;
+    text-decoration: underline;
+}
+
+
+.deals
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#dealBuy
+{
+    
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: black 2px 2px 8px;
+    color: yellow;
+    font-size: 30px;
+    margin: 30px 0
+}
+.dealItem
+{
+    height: 1000px;
+    padding: 25px 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#planDeal
+{
+    background-image: url("/images/family.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+#planDeal
+{
+    background-color: rgb(255, 255, 177);
+}
+
+#samsungNote205gDeal
+{
+    background-color: rgb(213, 238, 255);
+}
+
+#iPhone11Deal
+{
+    background-color: whitesmoke;
+}
+.dealText h1
+{
+    font-weight: normal;
+    font-size: 3em;
+}
+.dealImage img{
+    width: 400px;
+}
+
+.sectionHeader
+{
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 600;
+    font-size: 5em;
+}
+
+#coverage
+{
+    background-color: rgb(175, 243, 236);
+}
+
+#coverage img
+{
+    width: 600px;
+}
+
+.footHeader{
+    
+}
+.footHeader
+{
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footItem li{
+    padding-block-start: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.footItem
+{
+    margin: 10px 10px;
+}
+
+.fspan
+{
+    float: right;
+}
+
+.footHeader h2{
+    font-weight: 600;
+}
+/* for tablets and ipads and smaller monitors */
+@media (max-width: 1400px)
+{
+    
+.offerPic img
+{
+    width: 550px;
+}
+
+#offerLimited
+{
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#offer
+{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+#offerBuy
+{
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: black 1px 1px;
+    color: gold;
+    font-size: 30px;
+    width: fit-content;
+    margin: 30px 0
+}
+
+#dealBuy
+{
+    
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: black 2px 2px 8px;
+    color: yellow;
+    font-size: 30px;
+    margin: 30px 0
+}
+.dealItem
+{
+    height: 1000px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.deals
+{
+    grid-template-columns: 50% 50%;
+}
+
+#coverage img
+{
+    width: 400px;
+}
+
+}
+
+/*Mobile view*/
+@media (max-width: 1000px)
+{
+    .landingOffer
+    {
+        
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .offerText{
+        padding: 0;
+    }
+    .offerText{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        padding: 0 10px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .offerPic
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .offerPic img
+    {
+        float: left;
+        width: 300px;
+    }
+
+    .deals
+{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.deals img
+{
+    width: 300px;
+}
+
+#coverage img
+{
+    width: 100%;
+}
+
+.sectionHeader
+{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.dealItem
+{
+    height: 800px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.dealText h1
+{
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.footHeader
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footItem li {
+    display: block;
+}
+
+.fspan
+{
+    float: none;
+}
+
+}

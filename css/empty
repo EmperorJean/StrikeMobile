@@ -1,0 +1,10 @@
+/* for tablets and ipads and smaller monitors */
+@media (max-width: 1400px)
+{
+
+}
+
+/*Mobile view*/
+@media (max-width: 1000px)
+{
+}

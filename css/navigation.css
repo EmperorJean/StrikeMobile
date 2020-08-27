@@ -1,0 +1,224 @@
+
+#navBar
+{ 
+    position:-webkit-sticky;
+    position: sticky;
+    background-color: gold;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    top: 0;
+    
+}
+
+.navItems
+{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav, .navText
+{
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navLi
+{
+    display: inline-block;
+}
+
+.navLi a, .show{
+    position: relative;
+    font-weight: bold;
+    height: 100%;
+    padding: 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+.navLi a:hover, .show:hover
+{
+    
+    transition: .2s ease all;
+    color: yellow;
+    text-shadow: 1px 1px black;
+}
+.navLi a:focus, .show:focus
+{
+    color: yellow;
+    text-shadow: 1px 1px black;
+}
+
+.innerNav
+{
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    position: absolute;
+    background-color: gold;
+    z-index: 100;
+    width: 200px;
+    top: 90px;
+    transition: top .2s ease;
+}
+
+.innerNav li{
+    position: relative;
+    list-style: none;
+    float: none;
+    display: list-item;
+}
+
+.navLi:hover .innerNav{
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.innerNav a{
+    display: block;
+    width: auto;
+    cursor: pointer;
+}
+
+.innerNav a:hover{
+    margin-left: 20px;
+}
+
+.toggleButton
+{
+    cursor: pointer;
+    display: none;
+    color: black;
+    font-size: 100px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 100;
+}
+
+.logo
+{
+    float: left;
+    margin: 10px  0 0 20px;
+    height: 50px;
+}
+
+.show, input
+{
+    display: none;
+}
+
+
+/* for tablets and ipads and smaller monitors */
+@media (max-width: 1400px)
+{
+
+    #navBar
+    {
+        display: block;
+    }
+    .navText
+    {
+        display: none;
+    }
+
+
+    #sideNav a
+    {
+    padding-left: 0;
+    padding-right: 10px;
+    }
+
+    .navText, input
+    {
+        display: none;
+    }
+
+}
+/*Mobile view*/
+@media (max-width: 1000px)
+{
+    .logo
+    {
+        display: block;
+    }
+    .show{
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .toggleButton{
+        display: block;
+        font-size: 50px;
+    }
+
+    #navBar
+    {
+        min-height: 75px;
+        height: auto;
+    }
+
+    .navItems
+    {
+        
+        clear: both;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+     .nav{
+         position: static;
+    } 
+
+    .navLi{
+        border-bottom: solid 1px black;
+        display: block;
+    }
+    .logo{
+        height: 50px;
+    }
+
+    #sideNav a
+    {
+    display: flex;
+    justify-content: space-between;    
+    margin: 0 20px;
+    }
+
+    .navText
+    {
+        display: block;
+    }
+
+    .innerNav
+    {
+        
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        width: 100%;
+    }
+
+    .innerNav a
+    {
+        width: 100%;
+        position: relative;
+        padding-left: 75px;
+    }
+
+ 
+    .show + a, ul
+    {
+        display: none;
+    }
+
+    [id^=btn]:checked ~ ul
+    {
+        display: block;
+    }
+   
+} /* end of mobile view */

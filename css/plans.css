@@ -1,0 +1,19 @@
+/* for tablets and ipads and smaller monitors */
+
+.planBanner
+{
+    background-image: url("https://media.giphy.com/media/ZSvAC5c9RkW4g/giphy.gif");
+}
+
+
+
+
+@media (max-width: 1400px)
+{
+
+}
+
+/*Mobile view*/
+@media (max-width: 1000px)
+{
+}
