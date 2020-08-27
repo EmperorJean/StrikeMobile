@@ -2,10 +2,11 @@
 
 <html>
     <head>
-        <title>Strike</title>
+        <title>Strike | Plans</title>
         <link href = "css/main.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/067327e6b9.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/png" href="images/logoBlackNGold.png">
     </head>
 
     <body>
@@ -24,10 +25,10 @@
                             <a href = "#">Plans <i class="fa fa-chevron-down"></i></a>
                             <input type="checkbox" id = "btnPlans">
                             <ul class = "innerNav">
-                                <li><a>Spark®</a></li>
-                                <li><a>Bolt®</a></li>
-                                <li><a>Bolt+®</a></li>
-                                <li><a>Lightning®</a></li>
+                                <li><a >Spark®</a></li>
+                                <li><a href ="#bolt">Bolt®</a></li>
+                                <li><a href = "#bolt+">Bolt+®</a></li>
+                                <li><a href = "#lightning">Lightning®</a></li>
                             </ul>
                         </li>
                         <li class = "navLi">
@@ -42,17 +43,17 @@
                             </ul>
                         </li>
                         <li class = "navLi">
-                             <label for="btnCoverage" class = "show">Coverage <i class="fa fa-chevron-down"></i></label>
-                              <a href = "#">Coverage 
-                                  <i class="fa fa-chevron-down"></i>
-                             </a>
-                             <input type="checkbox" id = "btnCoverage">
-                            <ul class = "innerNav">
-                                <li><a>About our coverage</a></li>
-                                <li><a>Map</a></li>
-                                <li><a>5G</a></li>
-                                <li><a>Compare</a></li>
-                            </ul></li>
+                            <label for="btnCoverage" class = "show">About <i class="fa fa-chevron-down"></i></label>
+                            <a href = "#">About 
+                                <i class="fa fa-chevron-down"></i>
+                           </a>
+                           <input type="checkbox" id = "btnCoverage">
+                          <ul class = "innerNav">
+                              <li><a>Our coverage</a></li>
+                              <li><a>Our Mission</a></li>
+                              <li><a>5G</a></li>
+                              <li><a>Compare</a></li>
+                          </ul></li>
                     </ul>
                     <input type="checkbox" id="btnMenu"> 
                     <ul id="sideNav" class = "nav">
@@ -78,6 +79,7 @@
                 </form>
             </section>
             
+            <!-- table section beginning -->
             <section class="tableHolder">
                 <div class="priceTable">
                     <div class="priceCollumn">
@@ -87,7 +89,7 @@
                                 30
                                 <div class="perMonth">/mo</div>
                             </div>
-                            <div class="planName">Bolt</div>
+                            <div class="planName" id = "bolt">Bolt</div>
                         </div>
                         <div class="divider"></div>
                         <div class="features">
@@ -130,7 +132,7 @@
                                 35
                                 <div class="perMonth">/mo</div>
                             </div>
-                            <div class="planName">Bolt+</div>
+                            <div class="planName" id = "bolt+">Bolt+</div>
                         </div>
                         <div class="divider"></div>
                         <div class="features">
@@ -175,7 +177,7 @@
                                 45
                                 <div class="perMonth">/mo</div>
                             </div>
-                            <div class="planName">Lightning</div>
+                            <div class="planName" id = "lightning">Lightning</div>
                         </div>
                         <div class="divider"></div>
                         <div class="features">
@@ -215,7 +217,72 @@
                     </div>
                 </div>
             </section>
+            <!-- End of plan table section -->
             
+
+            <!-- spark plan section -->
+            <section class="spark">
+                <div class="sparkHeader">
+
+                    <section class="sectionHeader">
+                        <h1>Introducing Spark® </h1>
+                    </section>
+                </div>
+                <div class="sparkBody">
+                    <h1>For a limited time only, add 4 lines for 100$</h1>
+                    <p>With autopay,taxes, and a 1 year agreement. After a year, each line will automatically be upgraded to Bolt+®</p>
+                    <button>Click here to get started</button>
+                </div>
+                <div class="sparkFooter">
+
+                </div>
+            </section>
+
+            <footer>
+                <div class="footHeader">
+                    <div class="footItem">
+                        <h2>Connect With Us</h2>
+                        <li><span>Instagram</span> <i class="fa fa-instagram"></i></li>
+                        <li><span>Twitter</span> <i class="fa fa-twitter"></i></li>
+                        <li><span>Facebook</span> <i class="fa fa-facebook"></i></li>
+                        <li><span>Snapchat</span> <i class="fa fa-snapchat"></i></li>
+                    </div>
+                    <div class="footItem">
+                        <h2>Phones and Devices</h2>
+                        <li><span>Samsung</span></li>
+                        <li><span>Apple</span> </li>
+                        <li><span>Google</span></li>
+                        <li><span>Lg</span></li>
+                        <li><span>Smartwatches</span></li>
+                        <li><span>More</span></li>
+                    </div>
+                    <div class="footItem">
+                        <h2>My Account</h2>
+                        <li><span>Order Status</span></li>
+                        <li><span>Pay Bill</span> </li>
+                        <li><span>Upgrade</span></li>
+                        <li><span>Add a Line</span></li>
+                        <li><span>Edit Account</span></li>
+                    </div>
+                    <div class="footItem">
+                        <h2>Support</h2>
+                        <li><span>Frequently asked Questions</span></li>
+                        <li><span>Contact US</span> </li>
+                        <li><span>Phones</span></li>
+                        <li><span>Plans</span></li>
+                        <li><span>Billing</span></li>
+                    </div>
+                    <div class="footItem">
+                        <h2>About Us</h2>
+                        <li><span>Our Mission</span></li>
+                        <li><span>News</span> </li>
+                        <li><span>Privacy Center</span></li>
+                    </div>
+                </div>
+                <div class="footerFoot">
+                    <h1></h1>
+                </div>
+            </footer>
     </body>
 
 </html>

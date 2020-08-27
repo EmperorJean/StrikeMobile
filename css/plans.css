@@ -72,7 +72,7 @@
     background-color: rgb(248, 248, 186);
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.349);
     padding: 2.5rem;
-    max-width: 400px;
+    max-width: 500px;
     flex-grow: 1;
     flex-basis: 0;
     border-radius: 8px;
@@ -160,9 +160,80 @@
 {
     margin-left: .5rem;
 }
+
+.spark
+{
+    margin: auto;
+}
+.sparkHeader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(248, 248, 186);
+    border: solid black 1px;
+}
+
+.sparkBody
+{
+    background-color: whitesmoke;
+    height: 600px;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)),
+      url("https://thumbs.gfycat.com/LateGrossFoxhound-size_restricted.gif");
+    background-repeat: no-repeat;
+    color: white;
+    background-size: 100% 100%;
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.sparkBody p{
+    margin-top: -8rem;
+    margin-bottom: -4rem;
+}
+.sparkBody h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.sparkBody button{
+    background: none;
+    border: none;
+    background-color: gold;
+    outline: none;
+    padding: 1.5rem 1rem;
+    font-size: 3rem;
+    transition: all ease 1s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.sparkBody button:hover
+{
+    transform: scale(1.5)
+}
 @media (max-width: 1400px)
 {
 
+    .sparkBody{
+        height: 700px;
+    }
+    .sparkBody h1{
+        font-size: 3.5rem;
+    }
+
+    .sparkBody button{
+        font-size: 1rem;
+    }
 }
 
 /*Mobile view*/
@@ -199,5 +270,18 @@
 .priceCollumn{
     border-radius: 0;
     width: 100%;
+}
+
+.sparkBody
+{
+    height: 800px;
+}
+
+.sparkBody h1{
+    font-size: 2rem;
+}
+    
+.sparkBody button{
+    font-size: 1rem;
 }
 }
